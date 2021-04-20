@@ -16,7 +16,7 @@ app.get("/", function(req, res)
 app.post("/",function(req, res)
 {
 	const stock = req.body.stock;
-	const ApiKey = "8IX8PZU7Y8QGZH99";
+	const ApiKey = "";
 	const url = "https://www.alphavantage.co/query?function=OVERVIEW&symbol=" + stock +  "&apikey=" + ApiKey;
 	res.setHeader('Content-type','text/html');
 	https.get(url, function(response)
